@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Click</title>
+<script>
+function handleClick(event) {
+  // Get the button that was clicked
+  const button = event.target;
+
+  // Change the text content of the paragraph element
+  const paragraph = document.getElementById("paragraph");
+  paragraph.textContent = "Button Clicked!";
+}
+
+// Add an event listener for the click event on the button
+document.getElementById("button").addEventListener("click", handleClick);
+</script>
+</head>
+<body>
+<h1>Button Click</h1>
+<p id="paragraph">Click the button to change the text content of this paragraph.</p>
+<button id="button">Click Me!</button>
+</body>
+</html>

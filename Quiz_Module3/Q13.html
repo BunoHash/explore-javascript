@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paragraphs with Same Class and Different IDs</title>
+</head>
+<body>
+<p class="paragraph" id="paragraph1">This is paragraph 1.</p>
+<p class="paragraph" id="paragraph2">This is paragraph 2.</p>
+<p class="paragraph" id="paragraph3">This is paragraph 3.</p>
+<p class="paragraph" id="paragraph4">This is paragraph 4.</p>
+<script>
+function changeTextColor() {
+  var paragraphs = document.querySelectorAll(".paragraph");
+  for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = "red";
+  }
+}
+</script>
+<button onclick="changeTextColor()">Change Text Color</button>
+</body>
+</html>

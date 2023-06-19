@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Click, Key Press, and Mouse Over</title>
+<script>
+function handleClick(event) {
+
+  const x = event.clientX;
+  const y = event.clientY;
+  alert(`You clicked at (${x}, ${y})`);
+}
+
+function handleKeyPress(event) {
+  const keyCode = event.keyCode;
+  alert(`You pressed the key with the code ${keyCode}`);
+}
+
+function handleMouseOver(event) {
+  const element = event.target;
+  if (element.tagName === "IMG") {
+    element.src = "https://example.com/other-image.png";
+  }
+}
+
+document.addEventListener("click", handleClick);
+document.addEventListener("keypress", handleKeyPress);
+document.addEventListener("mouseover", handleMouseOver);
+</script>
+</head>
+<body>
+<h1>Click, Key Press, and Mouse Over Demo</h1>
+<img src="https://example.com/image.png" />
+</body>
+</html>

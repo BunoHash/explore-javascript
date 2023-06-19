@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Highlight</title>
+<style>
+.highlight {
+  background-color: yellow;
+}
+</style>
+<script>
+function highlightParagraph() {
+  const paragraph = document.getElementById("paragraph");
+  paragraph.classList.add("highlight");
+}
+document.getElementById("button").addEventListener("click", highlightParagraph);
+</script>
+</head>
+<body>
+<h1>Highlight</h1>
+<p id="paragraph">This is a paragraph.</p>
+<button id="button">Highlight</button>
+</body>
+</html>

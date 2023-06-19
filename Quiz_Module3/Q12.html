@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image with Changeable Source URL</title>
+</head>
+<body>
+<img src="https://www.w3schools.com/images/img_girl.jpg" alt="Girl">
+<button onclick="changeImage()">Change Image</button>
+<script>
+function changeImage() {
+  var img = document.querySelector("img");
+  img.src = "https://www.w3schools.com/images/img_dog.jpg";
+}
+</script>
+</body>
+</html>
+

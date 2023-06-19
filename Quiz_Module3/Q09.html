@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<script>
+function validateForm(event) {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+
+  if (name === "") {
+    alert("Please enter your name.");
+    return false;
+  }
+
+  if (!/\S+@\S+\.\S+/.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  if (password.length < 8) {
+    alert("Your password must be at least 8 characters long.");
+    return false;
+  }
+
+  if (password !== confirmPassword) {
+    alert("Your passwords do not match.");
+    return false;
+  }
+
+  event.preventDefault();
+  document.getElementById("form").submit();
+}
+</script>
+</head>
+<body>
+<h1>Form Validation</h1>
+<form id="form" onsubmit="return validateForm(event)">
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <input type="password" id="confirmPassword" placeholder="Confirm Password">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
