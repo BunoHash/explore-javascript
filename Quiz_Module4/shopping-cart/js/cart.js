@@ -117,12 +117,12 @@ function applyDiscount(){
     
         
     if(discount<0){
-        alert('Discount can not be negative');
+        alert(`You can't give negative discount`);
         discount = 0;
     }
 
     if(discount>total) {
-        alert('Discount can not be grater than total');
+        alert(`Discount can't be greater than cart subtotal`);
         discount = 0;
     }
     document.getElementById('discount').value = discount;
