@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Product List</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr class="row">
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Code</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            
+        </tbody>
+    </table>
+  
+    
+    <hr>
+
+    <h1>Shopping Cart <span><button class="float-right btn btn-danger btn-clear" id="cart-clear-button" style="visibility: hidden;">Clear Cart</button></span></h1>
+
+    <table class="table table-striped" id="cart-table">
+        <thead>
+            <tr class="row">
+                <th scope="col">Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Sub Total</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="cart-item-list">
+            
+        </tbody>
+    </table>
+    
+    <div id="cart">
+        <p>Your cart is empty.</p>
+    </div>
+    
+
+    
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

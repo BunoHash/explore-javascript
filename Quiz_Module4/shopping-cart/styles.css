@@ -1,0 +1,36 @@
+/* .container {
+    margin-top: 20px;
+  } */
+  
+  .cart-item {
+    margin-bottom: 10px;
+  }
+  
+  .btn-clear {
+    margin-top: 10px;
+  }
+
+  .cart-minus{
+    background-color: rgb(120, 117, 113);
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .cart-plus{
+    background-color: rgb(120, 117, 113);
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .cart-column{
+    display: block;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: table-row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+  
